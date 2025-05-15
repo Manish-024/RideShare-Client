@@ -37,7 +37,9 @@ const Navbar = () => {
       <nav>
         <div className="wrapper-nav">
           <div className="logo">
-            <Link to="#">Logo</Link>
+            <Link to="/">
+              <img src="https://images.squarespace-cdn.com/content/v1/586bdf6e9f7456a2126a6f2b/1517695174941-KPO74GWZON2JLQQ6F0MP/Ride+Share+Logo+2.jpg?format=1500w" alt="Logo" className="logo-image" />
+            </Link>
           </div>
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />

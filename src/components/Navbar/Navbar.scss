@@ -144,6 +144,14 @@ nav .wrapper-nav .desktop-item{
   top: 10px;
 }
 
+/* Add styles for the logo image to ensure it fits within the header */
+.logo-image {
+  max-height: 50px; /* Adjust the height to fit within the header */
+  width: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure proper alignment */
+  margin: 0 auto; /* Center the logo if needed */
+}
+
 @media screen and (max-width: 970px) {
   .wrapper-nav .btn{
     display: block;

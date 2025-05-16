@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center h-full text-center">
           <div className="w-1/2 lg:w-1/3 z-50 text-xl md:ml-[400px] lg:ml-[600px]">
             <div className="text-black md:text-3xl lg:text-5xl font-bold mb-8">
-              Book your ride on LiftLink and Sharing Rides, Saving Miles,
+              Book your ride on RideShare and Sharing Rides, Saving Miles,
               Building Smiles
             </div>
             <button

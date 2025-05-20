@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/I527873/Documents/BITS/Scalable_Project/RideShare/Client/tests/objectOrientedTesting.test.js">
+    <testCase name="Object-Oriented Testing for Ride Class Valid Ride object" duration="12"/>
+    <testCase name="Object-Oriented Testing for Ride Class Invalid Ride object - missing origin" duration="0"/>
+    <testCase name="Object-Oriented Testing for Ride Class Invalid Ride object - missing destination" duration="0"/>
+    <testCase name="Object-Oriented Testing for Ride Class Invalid Ride object - seats below minimum" duration="0"/>
+    <testCase name="Object-Oriented Testing for Ride Class Invalid Ride object - seats above maximum" duration="0"/>
+  </file>
+  <file path="/Users/I527873/Documents/BITS/Scalable_Project/RideShare/Client/tests/boundaryValueAnalysis.test.js">
+    <testCase name="Boundary Value Analysis Tests for postRequest Boundary value - minimum valid seats (1)" duration="3"/>
+    <testCase name="Boundary Value Analysis Tests for postRequest Boundary value - maximum valid seats (10)" duration="0"/>
+    <testCase name="Boundary Value Analysis Tests for postRequest Boundary value - below minimum seats (0)" duration="0"/>
+    <testCase name="Boundary Value Analysis Tests for postRequest Boundary value - above maximum seats (11)" duration="0"/>
+  </file>
+  <file path="/Users/I527873/Documents/BITS/Scalable_Project/RideShare/Client/tests/equivalencePartitioning.test.js">
+    <testCase name="Equivalence Partitioning Tests for postRequest Valid input - should succeed" duration="6"/>
+    <testCase name="Equivalence Partitioning Tests for postRequest Invalid input - missing origin" duration="1"/>
+    <testCase name="Equivalence Partitioning Tests for postRequest Invalid input - seats less than 1" duration="0"/>
+    <testCase name="Equivalence Partitioning Tests for postRequest Invalid input - missing destination" duration="0"/>
+  </file>
+  <file path="/Users/I527873/Documents/BITS/Scalable_Project/RideShare/Client/tests/rideApi.test.js">
+    <testCase name="rideApi.js getRequests - success" duration="3"/>
+    <testCase name="rideApi.js getRequests - failure" duration="0"/>
+    <testCase name="rideApi.js postRequest - success" duration="0"/>
+    <testCase name="rideApi.js postRequest - failure" duration="0"/>
+    <testCase name="rideApi.js getAcceptedRides - success" duration="33"/>
+    <testCase name="rideApi.js getAcceptedRides - failure" duration="1"/>
+  </file>
+  <file path="/Users/I527873/Documents/BITS/Scalable_Project/RideShare/Client/tests/regression.test.js">
+    <testCase name="Regression Testing for rideApi Ensure getRequests still works after recent changes" duration="7"/>
+    <testCase name="Regression Testing for rideApi Ensure postRequest still works after recent changes" duration="0"/>
+    <testCase name="Regression Testing for rideApi Ensure getAcceptedRides still works after recent changes" duration="31"/>
+  </file>
+</testExecutions>

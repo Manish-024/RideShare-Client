@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="22" failures="0" errors="0" time="1.675">
+  <testsuite name="Object-Oriented Testing for Ride Class" errors="0" failures="0" skipped="0" timestamp="2025-05-20T18:39:27" time="1.309" tests="5">
+    <testcase classname="Object-Oriented Testing for Ride Class Valid Ride object" name="Object-Oriented Testing for Ride Class Valid Ride object" time="0.014">
+    </testcase>
+    <testcase classname="Object-Oriented Testing for Ride Class Invalid Ride object - missing origin" name="Object-Oriented Testing for Ride Class Invalid Ride object - missing origin" time="0.001">
+    </testcase>
+    <testcase classname="Object-Oriented Testing for Ride Class Invalid Ride object - missing destination" name="Object-Oriented Testing for Ride Class Invalid Ride object - missing destination" time="0.001">
+    </testcase>
+    <testcase classname="Object-Oriented Testing for Ride Class Invalid Ride object - seats below minimum" name="Object-Oriented Testing for Ride Class Invalid Ride object - seats below minimum" time="0">
+    </testcase>
+    <testcase classname="Object-Oriented Testing for Ride Class Invalid Ride object - seats above maximum" name="Object-Oriented Testing for Ride Class Invalid Ride object - seats above maximum" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Equivalence Partitioning Tests for postRequest" errors="0" failures="0" skipped="0" timestamp="2025-05-20T18:39:27" time="1.313" tests="4">
+    <testcase classname="Equivalence Partitioning Tests for postRequest Valid input - should succeed" name="Equivalence Partitioning Tests for postRequest Valid input - should succeed" time="0.007">
+    </testcase>
+    <testcase classname="Equivalence Partitioning Tests for postRequest Invalid input - missing origin" name="Equivalence Partitioning Tests for postRequest Invalid input - missing origin" time="0.001">
+    </testcase>
+    <testcase classname="Equivalence Partitioning Tests for postRequest Invalid input - seats less than 1" name="Equivalence Partitioning Tests for postRequest Invalid input - seats less than 1" time="0">
+    </testcase>
+    <testcase classname="Equivalence Partitioning Tests for postRequest Invalid input - missing destination" name="Equivalence Partitioning Tests for postRequest Invalid input - missing destination" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Boundary Value Analysis Tests for postRequest" errors="0" failures="0" skipped="0" timestamp="2025-05-20T18:39:27" time="1.315" tests="4">
+    <testcase classname="Boundary Value Analysis Tests for postRequest Boundary value - minimum valid seats (1)" name="Boundary Value Analysis Tests for postRequest Boundary value - minimum valid seats (1)" time="0.005">
+    </testcase>
+    <testcase classname="Boundary Value Analysis Tests for postRequest Boundary value - maximum valid seats (10)" name="Boundary Value Analysis Tests for postRequest Boundary value - maximum valid seats (10)" time="0.001">
+    </testcase>
+    <testcase classname="Boundary Value Analysis Tests for postRequest Boundary value - below minimum seats (0)" name="Boundary Value Analysis Tests for postRequest Boundary value - below minimum seats (0)" time="0.001">
+    </testcase>
+    <testcase classname="Boundary Value Analysis Tests for postRequest Boundary value - above maximum seats (11)" name="Boundary Value Analysis Tests for postRequest Boundary value - above maximum seats (11)" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Regression Testing for rideApi" errors="0" failures="0" skipped="0" timestamp="2025-05-20T18:39:27" time="1.367" tests="3">
+    <testcase classname="Regression Testing for rideApi Ensure getRequests still works after recent changes" name="Regression Testing for rideApi Ensure getRequests still works after recent changes" time="0.005">
+    </testcase>
+    <testcase classname="Regression Testing for rideApi Ensure postRequest still works after recent changes" name="Regression Testing for rideApi Ensure postRequest still works after recent changes" time="0">
+    </testcase>
+    <testcase classname="Regression Testing for rideApi Ensure getAcceptedRides still works after recent changes" name="Regression Testing for rideApi Ensure getAcceptedRides still works after recent changes" time="0.056">
+    </testcase>
+  </testsuite>
+  <testsuite name="rideApi.js" errors="0" failures="0" skipped="0" timestamp="2025-05-20T18:39:27" time="1.367" tests="6">
+    <testcase classname="rideApi.js getRequests - success" name="rideApi.js getRequests - success" time="0.007">
+    </testcase>
+    <testcase classname="rideApi.js getRequests - failure" name="rideApi.js getRequests - failure" time="0.001">
+    </testcase>
+    <testcase classname="rideApi.js postRequest - success" name="rideApi.js postRequest - success" time="0.01">
+    </testcase>
+    <testcase classname="rideApi.js postRequest - failure" name="rideApi.js postRequest - failure" time="0">
+    </testcase>
+    <testcase classname="rideApi.js getAcceptedRides - success" name="rideApi.js getAcceptedRides - success" time="0.045">
+    </testcase>
+    <testcase classname="rideApi.js getAcceptedRides - failure" name="rideApi.js getAcceptedRides - failure" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = import.meta.env.VITE_SERVER_BASE_URL;
+const BASE_URL = process.env.VITE_SERVER_BASE_URL || 'http://localhost:3000';
 const ADMIN_URL = `${BASE_URL}/admin`;
 
 const authInterceptor = (req) => {
@@ -31,13 +31,6 @@ export const ADMIN_API = axios.create({
 API.interceptors.request.use(authInterceptor);
 ADMIN_API.interceptors.request.use(adminAuthInterceptor);
 
-export const handleApiError = async (error) => {
-  try {
-    const errorMessage =
-      error.response?.data?.message || "An unexpected error occurred.";
-    const data = null;
-    return { error: errorMessage, data };
-  } catch (err) {
-    throw new Error("An unexpected error occurred.");
-  }
+export const handleApiError = (error) => {
+  return { error: error.message, data: null };
 };

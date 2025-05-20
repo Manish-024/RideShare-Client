@@ -10,13 +10,13 @@ export const getRequests = async () => {
   }
 };
 
-export const postRequest = async (action, key) => {
+export const postRequest = async (requestData) => {
   try {
-    const res = await API.post("/rides/postRequests", { action, key });
-    if (res.status === 200) return { error: null, data: res.data };
-    else return { error: res.data.error, data: null };
+    const transformedData = { action: requestData, key: undefined };
+    const response = await API.post('/rides/postRequests', transformedData);
+    return { error: null, data: response.data };
   } catch (error) {
-    return handleApiError(error);
+    return { error: error.message, data: null };
   }
 };
 
